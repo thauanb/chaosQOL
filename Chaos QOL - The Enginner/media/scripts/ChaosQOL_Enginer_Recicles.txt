@@ -1,0 +1,279 @@
+module ChaosQOLEnginner
+{
+	imports
+	{
+		Base
+	}
+/* New  ok */
+/** Tools **/
+
+	recipe Disassemble Saw
+	{
+   Saw,
+      Result					    :UnusableWood=5,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Disassemble Shovel
+	{
+   SnowShovel/Shovel/Shovel2,
+   keep Saw,
+   keep Hammer,
+      Result					    :ScrapMetal=4,UnusableWood=4,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Disassemble BallPeenHammer
+	{
+   BallPeenHammer,
+   keep Saw,
+   keep Hammer,
+      Result					    :UnusableWood=5,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :BallPeenHammer,
+      Prop2               :Saw,
+	}
+
+  recipe Disassemble Wrench  
+  {
+    Wrench,
+      Result            :UnusableWood=5,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Disassemble Sledgehammer  
+  {
+    Sledgehammer,
+      Result            :ScrapMetal=20,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Disassemble LugWrench  
+  {
+    LugWrench,
+      Result            :ScrapMetal=20,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Disassemble TirePump  
+  {
+    TirePump,
+      Result            :ScrapMetal=10,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Disassemble Jack  
+  {
+    Jack,
+      Result            :ScrapMetal=30,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Disassemble Crowbar  
+  {
+    Crowbar,
+      Result            :ScrapMetal=15,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  
+  recipe Disassemble Torch  
+  {
+    Torch,
+      Result            :Battery=2,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+   recipe Disassemble Screwdriver
+   {
+      Screwdriver=2,
+         Result              :ScrapMetal=2,
+         Time				         :250.0,
+         Category				     :ChaosQOL,
+         SkillRequired	     :Carpentry=1,
+         CanBeDoneFromFloor  :true,
+         NeedToBeLearn	     :false,
+         StopOnWalk          :true,
+
+   }
+
+   recipe Disassemble Hammer
+   {
+      Hammer,
+         Result              :ScrapMetal=2,
+         Time				         :250.0,
+         Category				     :ChaosQOL,
+         SkillRequired	     :Carpentry=1,
+         CanBeDoneFromFloor  :true,
+         NeedToBeLearn	     :false,
+         StopOnWalk          :true,
+
+   }
+
+	recipe Disassemble WeldingMask
+	{
+   WeldingMask,
+   keep Saw,
+      Result					    :SmallSheetMetal=2,
+      Time				        :450.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Disassemble Shovel
+	{
+   SnowShovel/Shovel,
+   keep Saw,
+   keep Hammer,
+      Result					    :UnusableWood=4,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Disassemble Scissors
+	{
+   Scissors,
+   keep Hammer,
+      Result					    :ScrapMetal=4,
+      Time				        :150.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+	recipe Disassemble Axe
+	{
+   Axe,
+   keep Saw,
+      Result					    :UnusableWood=10,
+      Time				        :150.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+/**  Jewerly **/
+
+  recipe Disassemble Bracelets
+  {
+    Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/BellyButton_DangleGold/BellyButton_DangleGoldRuby/BellyButton_DangleSilver/BellyButton_DangleSilverDiamond/BellyButton_RingGold/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby/BellyButton_RingSilver/BellyButton_RingSilverAmethyst/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudGold/BellyButton_StudGoldDiamond/BellyButton_StudSilver/BellyButton_StudSilverDiamond,
+
+      Result            :ScrapMetal,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+  recipe Disassemble Ring
+  {
+    NoseRing_Gold/NoseRing_Silver/NoseStud_Gold/NoseStud_Silver/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldDiamond/Ring_Left_RingFinger_Gold/Ring_Left_RingFinger_Silver/Ring_Left_RingFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Right_RingFinger_GoldDiamond/WeddingRing_Man/WeddingRing_Woman,
+
+      Result            :ScrapMetal,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+  recipe Disassemble Earrings
+  {
+    Earring_LoopLrg_Gold/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopMed_Gold/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Earring_Stud_Silver/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Pearl/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond/Earring_Dangly_Pearl,
+      Result            :ScrapMetal,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+  recipe Disassemble NecklaceLong
+  {
+    NecklaceLong_Silver,
+      Result            :ScrapMetal,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+
+/**  Materials  **/
+
+  recipe Disassemble Nails  
+  {
+    Nails=10,
+    keep Hammer,
+      Result            :ScrapMetal,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+
+
+}
