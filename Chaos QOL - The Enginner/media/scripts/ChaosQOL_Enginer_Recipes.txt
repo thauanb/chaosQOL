@@ -1,0 +1,251 @@
+module ChaosQOLEnginner
+{
+	imports
+	{
+		Base
+	}
+
+/**  Tools **/
+
+  recipe Make Saw  
+  {
+    ScrapMetal=10,
+    UnusableWood=5,
+      Result            :Saw,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Make BallPeenHammer  
+  {
+    ScrapMetal=20,
+    UnusableWood=5,
+      Result            :BallPeenHammer,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Make Wrench  
+  {
+    ScrapMetal=20,
+      Result            :Wrench,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Make Sledgehammer  
+  {
+    ScrapMetal=40,
+    UnusableWood=10,
+
+      Result            :Sledgehammer,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+  recipe Make LugWrench  
+  {
+    ScrapMetal=40,
+      Result            :LugWrench,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+  recipe Make TirePump  
+  {
+    ScrapMetal=20,
+      Result            :TirePump,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Make Jack  
+  {
+    ScrapMetal=50,
+      Result            :Jack,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+  recipe Make Crowbar  
+  {
+    ScrapMetal=30,
+      Result            :Crowbar,
+      Time              :300,
+      Category          :ChaosQOL,
+      SkillRequired     :Metalworking=1=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :true,
+  }
+
+   recipe Make Torch
+   {
+      Battery=2,
+      ScrapMetal=10,
+         Result              :Torch,
+         Time				         :250.0,
+         Category				     :ChaosQOL,
+         SkillRequired	     :Metalworking=1,
+         CanBeDoneFromFloor  :true,
+         NeedToBeLearn	     :false,
+         StopOnWalk          :true,
+   }
+
+   recipe Make Screwdriver
+   {
+      UnusableWood=2,
+      ScrapMetal=4,
+         Result              :Screwdriver,
+         Time				         :250.0,
+         Category				     :ChaosQOL,
+         SkillRequired	     :Carpentry=1,
+         CanBeDoneFromFloor  :true,
+         NeedToBeLearn	     :false,
+         StopOnWalk          :true,
+
+   }
+
+   recipe Make Hammer
+   {
+      UnusableWood=2,
+      ScrapMetal=5,
+         Result              :Hammer,
+         Time				         :250.0,
+         Category				     :ChaosQOL,
+         SkillRequired	     :Carpentry=1,
+         CanBeDoneFromFloor  :true,
+         NeedToBeLearn	     :false,
+         StopOnWalk          :true,
+
+   }
+
+
+
+	recipe Make Welding Mask
+	{
+   SmallSheetMetal,
+   SheetMetal
+   keep Saw,
+      Result					    :WeldingMask,
+      Time				        :450.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+	recipe Make Snow Shovel
+	{
+   UnusableWood=4,
+   ScrapMetal=4,
+   keep Saw,
+   keep Hammer,
+      Result					    :SnowShovel,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+	recipe Make Shovel
+	{
+   UnusableWood=4,
+   ScrapMetal=4,
+   keep Saw,
+   keep Hammer,
+      Result					    :Shovel,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Make Scissors
+	{
+   UnusableWood=4,
+   ScrapMetal=4,
+   keep Saw,
+   keep Hammer,
+      Result					    :Scissors,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+	recipe Make Axe
+	{
+   UnusableWood=10,
+   ScrapMetal=10,
+   keep Saw,
+   keep Hammer,
+      Result					    :Axe,
+      Time				        :350.0,
+      Category				    :ChaosQOL,
+      SkillRequired	      :MetalWelding=1,
+      CanBeDoneFromFloor	:true,
+      NeedToBeLearn	      :false,
+      Prop1               :Saw,
+	}
+
+/**  Materials  **/
+  recipe Make Nails  
+  {
+    ScrapMetal=1,
+    keep Hammer,
+      Result            :Nails=10,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Carpentry=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+
+  recipe Make SheetRope  
+  {
+    RippedSheets=4,
+    keep Hammer,
+      Result            :SheetRope,
+      Time              :50,
+      Category          :ChaosQOL,
+      SkillRequired     :Tailoring=1,
+      CanBeDoneFromFloor:true,
+      NeedToBeLearn     :false,
+      StopOnWalk        :false,
+  }
+
+
+}
